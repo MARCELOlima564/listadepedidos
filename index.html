@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,21 @@
     <title>Lista de Pedidos</title>
 </head>
 <body>
-    <h1>Cadastro de Pedidos</h1>
-    <div>
-        <input id="cliente" type="text" placeholder="Cliente">
-        <input id="mesa" type="text" placeholder="Mesa">
-        <input id="descricao" type="text" placeholder="Descrição">
-    </div>
+    <main>
+        <div id="cadastroDePedidos">
+            <h1>Cadastro de Pedidos</h1>
+            <input id="cliente" type="text" placeholder="Cliente">
+            <input id="mesa" type="text" placeholder="Mesa">
+            <input id="descricao" type="text" placeholder="Descrição">
+            <button onclick="criarCadastro()">Cadastrar</button>
+            <div id="msg"></div>
+        </div>
+        <div id="listaDePedidos">
+            <h2>Lista de Pedidos</h2>
+            <div id="listarCadastros">
+                <div class="hidden" id="cadastroUnico"></div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
